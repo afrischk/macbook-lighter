@@ -6,7 +6,7 @@ set -e
 device=${DEVICE:-intel_backlight}
 brightness=/sys/class/backlight/$device/brightness
 curr_brightness=`cat $brightness`
-max_brightness=`cat /sys/class/backlight/$device/max_brightness_brightness`
+max_brightness=`cat /sys/class/backlight/$device/max_brightness`
 
 screen_help () {
     echo 'Usage: macbook-lighter-screen <OPTION> [NUM]'
@@ -16,7 +16,7 @@ screen_help () {
     echo '  -i [NUM], --inc [NUM]   increase backlight by NUM'
     echo '  -d [NUM], --dec [NUM]   decrease backlight by NUM'
     echo '  -m, --min               close backlight'
-    echo '  -M, --max_brightness               set backlight to max_brightness'
+    echo '  -M, --max_brightness    set backlight to max_brightness'
     echo '  -h, --help              print this message'
     echo ''
     echo 'Examples:'

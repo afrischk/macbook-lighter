@@ -11,7 +11,7 @@ depends=('bc')
 makedepends=('git')
 provides=()
 conflicts=()
-source=('git+https://github.com/harttle/macbook-lighter.git')
+source=('git+https://github.com/afrischk/macbook-lighter.git')
 md5sums=('SKIP')
 
 pkgver() {
