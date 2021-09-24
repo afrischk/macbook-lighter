@@ -10,7 +10,7 @@ power_file=/sys/class/power_supply/ADP1/online
 screen_file=$device_dir/brightness
 kbd_file=$kbd_dir/brightness
 lid_file=/proc/acpi/button/lid/LID0/state
-light_file="/sys/devices/platform/applesmc.768/light"
+light_file=/sys/devices/platform/applesmc.768/light
 
 #####################################################
 # wait drivers loaded
